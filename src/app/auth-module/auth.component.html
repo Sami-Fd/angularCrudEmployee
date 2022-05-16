@@ -1,0 +1,37 @@
+<div>
+    <h2 class="my-5 text-uppercase text-center">Gestion d'Employee</h2>
+
+    <div class="row">
+        <div class="col-12 col-lg-4"></div>
+        <div class="col-12 col-lg-4">
+            <form class="form-card">
+                <div class="row justify-content-between text-left">
+                    <div class="form-group col-12 flex-column d-flex">
+
+                        <label class="text-color">Nom utilisateur <span class="text-danger"> *</span>
+                        </label>
+
+                        <input type="text" id="fname" [(ngModel)]="user.username" class="form-control" name="fname"
+                            placeholder="Username ">
+                    </div>
+
+                    <div class="form-group col-12 flex-column d-flex">
+                        <label class="text-color">Mot de passe<span class="text-danger"> *</span></label>
+                        <input type="password" id="Pword" [(ngModel)]="user.password" name="Pword" class="form-control"
+                            placeholder="Password">
+                    </div>
+                </div>
+
+
+                <div class="row mt-3">
+                    <div class="col-12 text-right">
+                        <button class="btn  w-100" (click)="login()"
+                            style="background: #fff;color: #546E7A;border: 1px solid #546E7A;">Connecter</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-12 col-lg-4"></div>
+    </div>
+</div>
